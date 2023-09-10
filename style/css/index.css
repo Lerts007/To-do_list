@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  background-image: -webkit-gradient(linear, left top, right top, from(#e22865), to(#37adcd));
+  background-image: linear-gradient(to right, #e22865, #37adcd);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+header {
+  width: 500px;
+  margin: 20px auto;
+  text-align: center;
+}
+header h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+}
+
+main {
+  position: relative;
+  min-width: 200px;
+  width: 500px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px 10px;
+}
+
+.task {
+  margin-top: 5px;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 10px #000;
+          box-shadow: 10px #000;
+  color: #fff;
+  font-size: 30px;
+  word-break: break-all;
+  border: 1px solid #2c1b1b;
+  border-radius: 5px;
+  background-color: rgba(255, 0, 0, 0.1);
+}
+.task i {
+  line-height: 1.8;
+  color: #b5b5b5;
+  cursor: pointer;
+}
+
+.completed-i {
+  color: #a3f113 !important;
+}
+
+.completed-p {
+  color: #b5b5b5;
+  text-decoration: line-through;
+}
+
+.add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+}
+.add__btn {
+  padding: 5px;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+}
+.add__text {
+  padding: 5px;
+  width: 100%;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+}
+.add__text::-webkit-input-placeholder {
+  color: #212529;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  opacity: 0.4;
+}
+.add__text:-ms-input-placeholder {
+  color: #212529;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  opacity: 0.4;
+}
+.add__text::-ms-input-placeholder {
+  color: #212529;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  opacity: 0.4;
+}
+.add__text::placeholder {
+  color: #212529;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  opacity: 0.4;
+}
+
+@media screen and (max-width: 450px) {
+  header, main {
+    width: 350px;
+  }
+}
